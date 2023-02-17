@@ -1,6 +1,10 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-plusplus */
 const gameContainer = document.getElementById('game');
+let card1 = 0;
+let card2 = 2;
+let cardsFlipped = 0;
+let noClicking = false;
 
 const COLORS = [
   'red',
@@ -62,7 +66,8 @@ function createDivsForColors(colorArray) {
 // TODO: Implement this function!
 function handleCardClick(event) {
   // you can use event.target to see which element was clicked
-  console.log('you just clicked', event.target);
+  // console.log('you just clicked', event.target);
+  event.target.style.backgroundColor = 'color';
 }
 
 // when the DOM loads
